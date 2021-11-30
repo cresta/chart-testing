@@ -9,3 +9,6 @@ RUN curl -L -o /tmp/kubeconform.gz "https://github.com/yannh/kubeconform/release
 	tar -C /tmp -zxvf /tmp/kubeconform.gz && mv /tmp/kubeconform /bin/kubeconform
 RUN apk update
 RUN apk add aws-cli
+
+RUN curl -o /usr/local/bin/slack https://raw.githubusercontent.com/rockymadden/slack-cli/master/src/slack
+RUN chmod +x /usr/local/bin/slack
