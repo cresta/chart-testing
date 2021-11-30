@@ -7,4 +7,4 @@ ARG HELM_S3_VERSION 0.10.0
 RUN helm plugin install https://github.com/hypnoglow/helm-s3.git --version "$HELM_S3_VERSION"
 RUN curl -L -o /tmp/kubeconform.gz "https://github.com/yannh/kubeconform/releases/download/v0.4.12/kubeconform-linux-amd64.tar.gz" && \
 	tar -C /tmp -zxvf /tmp/kubeconform.gz && mv /tmp/kubeconform /bin/kubeconform
-RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && sudo ./aws/install
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && ./aws/install
