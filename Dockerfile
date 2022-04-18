@@ -1,4 +1,4 @@
-ARG CT_VERSION=v3.4.0
+ARG CT_VERSION=v3.5.1
 FROM quay.io/helmpack/chart-testing:$CT_VERSION
 
 LABEL org.opencontainers.image.source https://github.com/cresta/chart-testing
